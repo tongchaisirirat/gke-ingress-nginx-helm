@@ -7,7 +7,7 @@ metadata:
    nginx.ingress.kubernetes.io/ssl-redirect: "false"
 spec:
  rules:
- - host: "34.124.148.170.nip.io"
+ - host: "$NGINX_INGRESS_IP.nip.io"
    http:
      paths:
      - pathType: Prefix
